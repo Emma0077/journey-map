@@ -14,3 +14,18 @@ main{padding-bottom:180px}
 .save-actions button{padding:8px 10px}
 @media(max-width:480px){main{padding-bottom:220px}.bottom{left:8px;right:8px;bottom:8px}.savebar{gap:5px}.savebar span{flex:1 1 100%;font-size:11px}.save-actions{width:100%}.save-actions button{flex:1;padding:7px 5px}.bottom-nav button{font-size:10px;padding:8px 1px}}
 @media print{.bottom{display:none}}
+
+/* 인터뷰와 결과 화면의 구분 */
+.guide + .scenes{margin-top:22px}
+.person-result{background:#fff;border:1px solid #eadfea;border-radius:16px;padding:22px;margin:24px 0}
+.person-result + .person-result{margin-top:30px;border-color:#dfc7df}
+.person-result-heading{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.person-result-heading h3{margin:2px 0 0;font-size:19px}
+.person-result-number{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:12px;background:#f8e9f8;color:#800080;font-size:13px;font-weight:900}
+.person-result-caption{font-size:10px;font-weight:900;letter-spacing:.1em;color:#b26cb2}
+.savebar{flex-wrap:nowrap;gap:8px;padding:6px 6px 8px}
+.savebar span{flex:1 1 auto;min-width:0;font-size:12px;white-space:nowrap}
+.save-actions{flex:0 0 auto;flex-wrap:nowrap;width:auto}
+.save-actions button{white-space:nowrap;flex:0 0 auto}
+@media(max-width:480px){main{padding-bottom:175px}.person-result{padding:16px;margin:18px 0}.savebar{flex-wrap:nowrap;gap:4px}.savebar span{flex:1 1 auto;min-width:0;font-size:11px}.save-actions{width:auto;flex:0 0 auto;gap:4px}.save-actions button{flex:0 0 auto;padding:7px 9px;font-size:11px}.bottom-nav button{white-space:nowrap}}
+@media print{.person-result{break-inside:avoid;border:1px solid #ddd}}
