@@ -121,3 +121,12 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .pain-role-hint{font-size:18px;line-height:1.55;font-weight:800;color:#6f006f}
 @media(max-width:650px){.pain-role-sticky{top:4px;gap:5px;padding:6px}.pain-role-item{display:block;padding:7px 8px}.pain-role-label{display:block;font-size:13px}.pain-role-item strong{display:block;font-size:16px}.pain-role-hint{font-size:16px}}
 @media print{.pain-role-sticky{position:static;box-shadow:none}}
+
+/* 순간별 상황과 감정을 분리해 표시 */
+.result-moment-details{margin:14px 0 0;display:grid;gap:12px;min-width:0}
+.result-moment-detail{min-width:0}
+.result-moment-detail dt{font-size:13px;font-weight:800;color:#79677b;line-height:1.4;margin-bottom:5px;overflow-wrap:anywhere}
+.result-moment-detail dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.result-moment-feeling{padding-top:10px;border-top:1px solid #e9ddea}
+.result-moment-feeling dt{color:#800080}
+@media(max-width:650px){.result-moment-details{margin-top:10px;gap:9px}.result-moment-detail dt{font-size:11px}.result-moment-feeling{padding-top:8px}}
