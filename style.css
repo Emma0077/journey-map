@@ -110,3 +110,14 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .result-journey-inner .curve-labels{margin-left:0;margin-right:0}
 .result-journey-inner .curve-wrap{width:100%}
 @media(max-width:650px){.result-journey-inner .result-scenes .field{margin:0 2px}.pain-example{font-size:14px}.scores.score-ten button{min-height:38px;font-size:14px}}
+
+/* Pain Point 담당자 안내는 질문 구간에서 함께 스크롤되며 상단에 유지 */
+.pain-role-sticky{position:sticky;top:8px;z-index:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 18px;padding:8px;border:1px solid #e8d9e9;border-radius:14px;background:#fff;box-shadow:0 5px 18px rgba(67,34,68,.12)}
+.pain-role-item{min-width:0;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;background:#f8edf8}
+.pain-role-label{flex:0 0 auto;font-size:15px;font-weight:900;color:#800080;line-height:1.35}
+.pain-role-item strong{min-width:0;font-size:19px;line-height:1.35;overflow-wrap:anywhere;color:#251c27}
+.pain-role-speaker{background:#fff5df}
+.pain-role-speaker .pain-role-label{color:#75500d}
+.pain-role-hint{font-size:18px;line-height:1.55;font-weight:800;color:#6f006f}
+@media(max-width:650px){.pain-role-sticky{top:4px;gap:5px;padding:6px}.pain-role-item{display:block;padding:7px 8px}.pain-role-label{display:block;font-size:13px}.pain-role-item strong{display:block;font-size:16px}.pain-role-hint{font-size:16px}}
+@media print{.pain-role-sticky{position:static;box-shadow:none}}
