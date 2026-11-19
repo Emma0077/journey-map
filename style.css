@@ -43,3 +43,18 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 @media(max-width:650px){header{height:auto;min-height:68px;gap:10px;padding:14px 16px}.brand{font-size:16px}.adminlink{font-size:14px;text-align:right}h2{font-size:24px}h3,.person-result-heading h3{font-size:21px}.guide{font-size:17px}.muted{font-size:16px}input,textarea,select,.scene input,.scene textarea{font-size:18px}.result-text{font-size:20px}}
 @media(max-width:480px){main{padding-bottom:195px}.savebar span{font-size:13px}.save-actions button{font-size:13px;padding:8px}.bottom-nav button{font-size:13px;padding:9px 2px}}
 @media(max-width:350px){.savebar span{font-size:12px}.save-actions button{font-size:12px;padding:7px 5px}.bottom-nav button{font-size:11px}}
+
+/* 10개 순간의 곡선을 화면 너비 안에 표시 */
+.curve-wrap{width:100%;min-width:0;margin:18px 0 24px}
+.curve-plot{position:relative;height:170px;margin:0 17px}
+.curve-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.curve-face{position:absolute;width:30px;height:30px;transform:translate(-50%,-50%);display:grid;place-items:center}
+.curve-face .face{width:30px;height:30px}
+.curve-labels{display:grid;grid-template-columns:repeat(var(--count),minmax(0,1fr));margin:5px 17px 0}
+.curve-label{min-width:0;text-align:center;font-size:12px;line-height:1.3;color:#746977;padding:0 2px}
+.curve-label span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.curve-label span:first-child{font-weight:800;color:#800080}
+.person-result .result-scenes,.admin-result .person-result .result-scenes{grid-template-columns:repeat(5,minmax(0,1fr))}
+.result-scenes .field{min-width:0;overflow-wrap:anywhere}
+.result-scenes .field b{display:block}
+@media(max-width:650px){.curve-plot{margin:0 12px;height:155px}.curve-labels{margin-left:12px;margin-right:12px}.curve-face,.curve-face .face{width:22px;height:22px}.curve-label{font-size:10px;padding:0 1px}.result-scenes{gap:5px}.result-scenes .field{padding:7px 5px}.result-scenes .field b{font-size:13px}.result-scenes .result-text,.result-scenes .muted{font-size:12px;line-height:1.45}.result-scenes .face{width:22px;height:22px}}
