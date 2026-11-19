@@ -81,3 +81,8 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .result-scenes .result-score .face{margin:0;flex:none}
 .result-scenes .result-score .muted{line-height:1.4;white-space:nowrap}
 @media(max-width:650px){.pain-selection{margin-top:20px}.pain-fields{margin-top:20px;gap:12px}.pain-role-hint{font-size:13px}.result-scenes .result-score{padding-top:9px;gap:3px;flex-wrap:wrap}.result-scenes .result-score .muted{font-size:12px}}
+
+/* 자동 저장 오류 및 충돌 안내 */
+.savebar.save-problem span{color:#a6324d;font-weight:800}
+.save-warning{margin:3px 7px 7px;color:#a6324d;background:#fff1f3;border-radius:8px;padding:8px;font-size:13px;line-height:1.45}
+@media(max-width:480px){.save-warning{font-size:12px}.save-actions{gap:4px}.save-actions button{white-space:nowrap}main{padding-bottom:240px}}
