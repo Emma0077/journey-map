@@ -69,3 +69,15 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .interview-role.role-answer .role-title{color:#8a5f16}
 .interview-prompts{margin-top:15px;line-height:1.7}
 @media(max-width:480px){.interview-roles{grid-template-columns:1fr;gap:8px}.interview-role{padding:12px}.interview-role strong{font-size:18px}.interview-role .role-title,.interview-role .role-desc{font-size:14px}}
+
+/* Pain Point 인터뷰 역할과 질문 간격 */
+.pain-selection{margin-top:24px}
+.pain-selection label{margin-bottom:10px}
+.pain-fields{margin-top:24px;gap:16px}
+.pain-role-hint{margin:0 0 8px;color:#800080;font-size:14px;font-weight:700;line-height:1.5}
+/* 한 행의 카드에서 표정과 점수는 같은 높이의 하단에 배치 */
+.result-scenes .field{display:flex;flex-direction:column;height:100%;min-width:0}
+.result-scenes .result-score{margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:center;gap:6px}
+.result-scenes .result-score .face{margin:0;flex:none}
+.result-scenes .result-score .muted{line-height:1.4;white-space:nowrap}
+@media(max-width:650px){.pain-selection{margin-top:20px}.pain-fields{margin-top:20px;gap:12px}.pain-role-hint{font-size:13px}.result-scenes .result-score{padding-top:9px;gap:3px;flex-wrap:wrap}.result-scenes .result-score .muted{font-size:12px}}
