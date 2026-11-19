@@ -86,3 +86,10 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .savebar.save-problem span{color:#a6324d;font-weight:800}
 .save-warning{margin:3px 7px 7px;color:#a6324d;background:#fff1f3;border-radius:8px;padding:8px;font-size:13px;line-height:1.45}
 @media(max-width:480px){.save-warning{font-size:12px}.save-actions{gap:4px}.save-actions button{white-space:nowrap}main{padding-bottom:240px}}
+
+.delete-class-card{border-color:#efc8d1}
+.delete-class-card summary{cursor:pointer;color:#a32b45;font-weight:800;font-size:16px}
+.delete-class-card form{margin-top:16px}
+.delete-class-card form p{font-size:16px}
+.delete-class-button{background:#a32b45;color:white;border-color:#a32b45}
+.delete-class-button:hover{background:#882037}
