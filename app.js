@@ -12,7 +12,7 @@ function route(){if(location.hash)return location.hash.slice(1).split('/').filte
 function link(path){return location.origin+'/#/'+path}
 function classLink(code){return location.origin+'/'+encodeURIComponent(code)}
 function navigate(path){location.hash='/'+path}
-function cardTitle(t,s=''){return `<div class="eyebrow">CREATIVE STUDIO</div><h1>${esc(t)}</h1><p class="muted">${esc(s)}</p>`}
+function cardTitle(t,s=''){return `<div class="eyebrow">Journey Map</div><h1>${esc(t)}</h1><p class="muted">${esc(s)}</p>`}
 function name(i){return team.doc.names[i]||`${i+1}번째 사람`}
 function faceShapes(v){let mouth=v===1?'<path d="M12 23 Q18 17 24 23" fill="none" stroke="#674621" stroke-width="2"/><path d="M8 16 C4 21 6 25 9 23 C11 22 10 19 8 16" fill="#6ebbf2"/>':v===2?'<path d="M12 22 Q18 18 24 22" fill="none" stroke="#674621" stroke-width="2"/>':v===3?'<path d="M13 21h10" fill="none" stroke="#674621" stroke-width="2"/>':v===4?'<path d="M12 19 Q18 25 24 19" fill="none" stroke="#674621" stroke-width="2"/>':'<path d="M12 19 Q18 27 24 19 Q18 22 12 19" fill="#674621"/><path d="M25 6 C25 3 29 3 29 6 C29 3 33 3 33 6 C33 9 29 12 29 12 C29 12 25 9 25 6" fill="#e94d8d" stroke="#fff" stroke-width=".7"/>';return `<circle cx="18" cy="18" r="15" fill="#ffd451" stroke="#f5b92c"/><circle cx="12.5" cy="13" r="1.6" fill="#674621"/><circle cx="23.5" cy="13" r="1.6" fill="#674621"/>${mouth}`}
 function face(v){return `<svg class="face" viewBox="0 0 36 36" aria-hidden="true">${faceShapes(v)}</svg>`}
