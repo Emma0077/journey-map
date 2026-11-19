@@ -16,7 +16,7 @@ main{padding-bottom:180px}
 @media print{.bottom{display:none}}
 
 /* 인터뷰와 결과 화면의 구분 */
-.guide + .scenes{margin-top:22px}
+.guide + .scenes, .teamgrid{margin-top:22px}
 .person-result{background:#fff;border:1px solid #eadfea;border-radius:16px;padding:22px;margin:24px 0}
 .person-result + .person-result{margin-top:30px;border-color:#dfc7df}
 .person-result-heading{display:flex;align-items:center;gap:12px;margin-bottom:18px}
