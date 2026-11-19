@@ -58,3 +58,14 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .result-scenes .field{min-width:0;overflow-wrap:anywhere}
 .result-scenes .field b{display:block}
 @media(max-width:650px){.curve-plot{margin:0 12px;height:155px}.curve-labels{margin-left:12px;margin-right:12px}.curve-face,.curve-face .face{width:22px;height:22px}.curve-label{font-size:10px;padding:0 1px}.result-scenes{gap:5px}.result-scenes .field{padding:7px 5px}.result-scenes .field b{font-size:13px}.result-scenes .result-text,.result-scenes .muted{font-size:12px;line-height:1.45}.result-scenes .face{width:22px;height:22px}}
+
+/* 인터뷰에서 질문자와 이야기하는 사람의 역할을 구분 */
+.interview-roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.interview-role{display:flex;flex-direction:column;gap:4px;border-radius:12px;padding:16px;background:#fff;border:1px solid #ead9eb;min-width:0}
+.interview-role .role-title{font-size:14px;font-weight:800;color:#800080}
+.interview-role strong{font-size:20px;color:#2d2030;overflow-wrap:anywhere}
+.interview-role .role-desc{font-size:15px;color:#716373;line-height:1.5}
+.interview-role.role-answer{background:#fff8e8;border-color:#f4dfac}
+.interview-role.role-answer .role-title{color:#8a5f16}
+.interview-prompts{margin-top:15px;line-height:1.7}
+@media(max-width:480px){.interview-roles{grid-template-columns:1fr;gap:8px}.interview-role{padding:12px}.interview-role strong{font-size:18px}.interview-role .role-title,.interview-role .role-desc{font-size:14px}}
