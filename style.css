@@ -93,3 +93,20 @@ button,.btn{font-size:16px;line-height:1.4}.scene label{font-size:16px}.scene in
 .delete-class-card form p{font-size:16px}
 .delete-class-button{background:#a32b45;color:white;border-color:#a32b45}
 .delete-class-button:hover{background:#882037}
+
+/* 10점 만족도는 5개씩 두 줄로 표시 */
+.scores.score-ten{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.scores.score-ten button{min-height:38px;border-radius:8px;font-size:15px;font-weight:800;color:#574459}
+.scores.score-ten button.selected{background:#800080;color:#fff}
+.score-current{display:flex;align-items:center;gap:8px;min-height:36px;margin-top:9px}
+.score-current .face{margin:0;flex:none}
+.pain-example{font-size:15px;line-height:1.55;margin:8px 0 12px;color:#6f5b73;background:#f5eef7;border-left:3px solid #c043c0;padding:10px 12px;border-radius:0 8px 8px 0;overflow-wrap:anywhere}
+/* 결과의 카드와 그래프는 하나의 스크롤 영역과 같은 열 너비를 사용 */
+.result-journey-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain;max-width:100%;padding-bottom:8px}
+.result-journey-inner{min-width:100%}
+.person-result .result-journey-inner .result-scenes,.admin-result .person-result .result-journey-inner .result-scenes{grid-template-columns:repeat(var(--moment-count),minmax(0,1fr));gap:0}
+.result-journey-inner .result-scenes .field{margin:0 4px}
+.result-journey-inner .curve-plot{margin-left:0;margin-right:0}
+.result-journey-inner .curve-labels{margin-left:0;margin-right:0}
+.result-journey-inner .curve-wrap{width:100%}
+@media(max-width:650px){.result-journey-inner .result-scenes .field{margin:0 2px}.pain-example{font-size:14px}.scores.score-ten button{min-height:38px;font-size:14px}}
